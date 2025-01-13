@@ -21,7 +21,7 @@
 :root { 
   background-color: #373640;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.09' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-  --default-color: #060606; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #B6F7C1; /* Accent color t  hat represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -147,7 +147,6 @@ h6 {
 .navmenu {
   padding: 0;
   z-index: 9997;
-  border-style: dashed;
 }
 
 .navmenu ul {
@@ -537,6 +536,29 @@ section,
   .hero p {
     font-size: 20px;
   }
+
+
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    display:block;
+    background-color: #373640;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.09' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .hero .container-left {
+    position: relative;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    margin-left: 1rem;
+  }
+  
+  .hero .container-right {
+    position: relative;
+    padding: 2rem;
+  }
+  
+
 }
 
 /*--------------------------------------------------------------
@@ -569,80 +591,44 @@ section,
   line-height: 0;
 }
 
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats i {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  width: 54px;
-  height: 54px;
-  font-size: 24px;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-
-.stats .stats-item {
-  margin-top: 10px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  z-index: 0;
-}
-
-.stats .stats-item span {
-  font-size: 36px;
-  display: block;
-  font-weight: 700;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.stats .stats-item p {
-  padding: 0;
-  margin: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-}
 
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+
+
+.skills-front {
+
+margin-bottom: 2rem;
+
+
+}
+.skills-front img{
+  width: 175px;
+  height: 175px;
+  object-fit:fill;
+  overflow: hidden;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
+.skills-back {
+
+  display: flex;
+  
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills-db {
+  display: flex;
+
+  
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
-}
+.skills-version {
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+  display: flex;
+  
 }
 
 /*--------------------------------------------------------------
