@@ -604,6 +604,24 @@ margin-bottom: 2rem;
 
 }
 .skills-front img{
+  width: 80px;
+  height: 80px;
+  object-fit:fill;
+  overflow: hidden;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  
+}
+
+
+.skills-back {
+
+  display: flex;
+  margin-bottom: 2rem;
+  
+}
+
+.skills-back img{
   width: 175px;
   height: 175px;
   object-fit:fill;
@@ -613,21 +631,37 @@ margin-bottom: 2rem;
   
 }
 
-.skills-back {
-
+.skills-db {
   display: flex;
+  margin-bottom: 2rem;
+
   
 }
 
-.skills-db {
-  display: flex;
-
+.skills-db img{
+  width: 175px;
+  height: 175px;
+  object-fit:fill;
+  overflow: hidden;
+  margin-left: 5rem;
+  margin-top: 2rem;
   
 }
 
 .skills-version {
 
   display: flex;
+  margin-bottom: 2rem;
+  
+}
+
+.skills-version img{
+  width: 175px;
+  height: 175px;
+  object-fit:fill;
+  overflow: hidden;
+  margin-left: 5rem;
+  margin-top: 2rem;
   
 }
 
