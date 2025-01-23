@@ -26,6 +26,9 @@
 
   });
 
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
   /**
    * Toggle mobile nav dropdowns
    */
